@@ -1,0 +1,134 @@
+/* Water Flow Animation Effects */
+
+@keyframes waterFlowUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes waterFlowDown {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes waterFlowLeft {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes waterFlowRight {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes waterFlowScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes waterFlowOutDown {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
+
+@keyframes vibrate {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px) translateY(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px) translateY(5px);
+  }
+}
+
+/* Utility Classes */
+.animate-water-flow-up {
+  animation: waterFlowUp 0.8s ease-out forwards;
+}
+
+.animate-water-flow-down {
+  animation: waterFlowDown 0.8s ease-out forwards;
+}
+
+.animate-water-flow-left {
+  animation: waterFlowLeft 0.8s ease-out forwards;
+}
+
+.animate-water-flow-right {
+  animation: waterFlowRight 0.8s ease-out forwards;
+}
+
+.animate-water-flow-scale {
+  animation: waterFlowScale 0.8s ease-out forwards;
+}
+
+.animate-water-flow-out-down {
+  animation: waterFlowOutDown 0.7s ease-in forwards;
+}
+
+.animate-vibrate {
+  animation: vibrate 0.3s ease-in-out;
+}
+
+/* Default - no animation yet */
+.water-flow-hidden {
+  opacity: 0;
+}
+
+/* Staggered animations for child elements */
+.stagger-1 {
+  animation-delay: 0s;
+}
+
+.stagger-2 {
+  animation-delay: 0.15s;
+}
+
+.stagger-3 {
+  animation-delay: 0.3s;
+}
+
+.stagger-4 {
+  animation-delay: 0.45s;
+}
+
+.stagger-5 {
+  animation-delay: 0.6s;
+}
